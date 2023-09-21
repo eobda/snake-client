@@ -10,8 +10,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successfully connected to game server.");
     conn.write("Name: OBD");
-    setTimeout(() => { conn.write("Move: up") }, 1000);
-    setTimeout(() => { conn.write("Move: right") }, 2000);
+    setInterval(() => { conn.write("Move: up") }, 50);
   });
 
   // interpret incoming data as text
