@@ -18,6 +18,10 @@ const handleUserInput = function(key) {
   if (key === "w") {
     console.log("Move: up");
   }
+
+  if (key === "s") {
+    console.log("Move: down");
+  }
 };
 
 module.exports = {
