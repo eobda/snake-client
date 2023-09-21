@@ -37,6 +37,15 @@ const handleUserInput = function(key) {
     case "i":
       connection.write("Say: outta my way");
       break;
+    case "j":
+      connection.write("Say: my bad");
+      break;
+    case "k":
+      connection.write("Say: nice move");
+      break;
+    case "l":
+      connection.write("Say: ssssssss");
+      break;
   }
 
 };
