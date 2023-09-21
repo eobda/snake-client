@@ -25,6 +25,9 @@ const handleUserInput = function(key) {
     case "a":
       console.log("Move: left");
       break;
+    case "d":
+      console.log("Move: right");
+      break;
   }
 
 };
