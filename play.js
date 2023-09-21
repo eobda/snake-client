@@ -20,3 +20,4 @@ const handleUserInput = function() {
 
 console.log("Connecting...");
 connect();
+setupInput();
