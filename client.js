@@ -10,6 +10,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successfully connected to game server.");
     conn.write("Name: OBD");
+    conn.write("Move: up");
   });
 
   // interpret incoming data as text
