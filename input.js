@@ -22,8 +22,11 @@ const handleUserInput = function(key) {
     case "s":
       console.log("Move: down");
       break;
+    case "a":
+      console.log("Move: left");
+      break;
   }
-  
+
 };
 
 module.exports = {
