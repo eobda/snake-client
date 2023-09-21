@@ -11,6 +11,7 @@ const connect = function() {
     console.log("Successfully connected to game server.");
     conn.write("Name: OBD");
     conn.write("Move: up");
+    conn.write("Move: right");
   });
 
   // interpret incoming data as text
