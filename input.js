@@ -15,13 +15,15 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  if (key === "w") {
-    console.log("Move: up");
+  switch(key) {
+    case "w":
+      console.log("Move: up");
+      break;
+    case "s":
+      console.log("Move: down");
+      break;
   }
-
-  if (key === "s") {
-    console.log("Move: down");
-  }
+  
 };
 
 module.exports = {
