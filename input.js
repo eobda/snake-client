@@ -15,3 +15,7 @@ const handleUserInput = function(key) {
     process.exit();
   }
 };
+
+module.exports = {
+  setupInput
+};
