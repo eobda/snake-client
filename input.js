@@ -14,6 +14,10 @@ const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
   }
+
+  if (key === "w") {
+    console.log("Move: up");
+  }
 };
 
 module.exports = {
