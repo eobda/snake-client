@@ -20,19 +20,21 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
+
+  if (key === "w") {
+    setInterval(() => { connection.write("Move: up") }, 50);
+  }
+  if (key === "a") {
+    setInterval(() => { connection.write("Move: left") }, 50);
+  }
+  // case "s":
+  //   setInterval(() => { connection.write("Move: down") }, 50);
+  //   break;
+  // case "d":
+  //   setInterval(() => { connection.write("Move: right") }, 50);
+  //   break;
+
   switch(key) {
-    case "w":
-      setInterval(() => { connection.write("Move: up") }, 50);
-      break;
-    case "s":
-      setInterval(() => { connection.write("Move: down") }, 50);
-      break;
-    case "a":
-      setInterval(() => { connection.write("Move: left") }, 50);
-      break;
-    case "d":
-      setInterval(() => { connection.write("Move: right") }, 50);
-      break;
 
     case "i":
       connection.write("Say: outta my way");
