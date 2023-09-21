@@ -33,6 +33,10 @@ const handleUserInput = function(key) {
     case "d":
       connection.write("Move: right");
       break;
+
+    case "i":
+      connection.write("Say: outta my way");
+      break;
   }
 
 };
