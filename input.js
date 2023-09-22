@@ -16,36 +16,36 @@ const setupInput = (conn) => {
 
 const handleUserInput = function(key) {
   // \u0003 maps to ctrl+c input
-  switch(key) {
-    case "\u0003":
-      process.exit();
-      break;
-      
-    case "w":
-      connection.write("Move: up");
-      break;
-    case "s":
-      connection.write("Move: down");
-      break;
-    case "a":
-      connection.write("Move: left");
-      break;
-    case "d":
-      connection.write("Move: right");
-      break;
+  switch (key) {
+  case "\u0003":
+    process.exit();
+    break;
 
-    case "i":
-      connection.write("Say: outta my way");
-      break;
-    case "j":
-      connection.write("Say: my bad");
-      break;
-    case "k":
-      connection.write("Say: nice move");
-      break;
-    case "l":
-      connection.write("Say: ssssssss");
-      break;
+  case "w":
+    connection.write("Move: up");
+    break;
+  case "s":
+    connection.write("Move: down");
+    break;
+  case "a":
+    connection.write("Move: left");
+    break;
+  case "d":
+    connection.write("Move: right");
+    break;
+
+  case "i":
+    connection.write("Say: outta my way");
+    break;
+  case "j":
+    connection.write("Say: my bad");
+    break;
+  case "k":
+    connection.write("Say: nice move");
+    break;
+  case "l":
+    connection.write("Say: ssssssss");
+    break;
   }
 
 };
