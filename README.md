@@ -9,6 +9,7 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 !["Snake gameplay including sending a message"](snek-gameplay.png)
+
 *Snake gameplay, including sending a message.*
 
 ## Getting Started
