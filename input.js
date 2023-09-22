@@ -1,5 +1,3 @@
-const { UP, DOWN, LEFT, RIGHT, SAY } = require("./constants");
-
 // Stores the active TCP connection object
 let connection;
 
@@ -24,29 +22,29 @@ const handleUserInput = function(key) {
     break;
 
   case "w":
-    connection.write(UP);
+    connection.write("Move: up");
     break;
   case "s":
-    connection.write(DOWN);
+    connection.write("Move: down");
     break;
   case "a":
-    connection.write(LEFT);
+    connection.write("Move: left");
     break;
   case "d":
-    connection.write(RIGHT);
+    connection.write("Move: right");
     break;
 
   case "i":
-    connection.write(SAY + "outta my way");
+    connection.write("Say: outta my way");
     break;
   case "j":
-    connection.write(SAY + "my bad");
+    connection.write("Say: my bad");
     break;
   case "k":
-    connection.write(SAY + "nice move");
+    connection.write("Say: nice move");
     break;
   case "l":
-    connection.write(SAY + "ssssssss");
+    connection.write("Say: ssssssss");
     break;
   }
 
