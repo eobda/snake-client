@@ -19,8 +19,8 @@ const handleUserInput = function(key) {
   switch (key) {
   case "\u0003":
     process.exit();
-    break;
 
+  // Movement inputs
   case "w":
     connection.write("Move: up");
     break;
@@ -34,6 +34,7 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
     break;
 
+  // Messages
   case "i":
     connection.write("Say: outta my way");
     break;
